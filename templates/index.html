@@ -1,0 +1,18 @@
+{% extends 'master.html' %}
+
+{% block content %}
+<div data-ng-app="BitlyApp">
+    <div data-ng-controller="BitlyController">
+        <input type="url" data-ng-model="url">
+        <button type="button" alt="Decode Bitly URL" ng-click="decode()">UnBitly</button>
+        <button type="button" alt="Open resulting URL" ng-click="open()">Open</button>
+
+        <span ng-bind="decodedUrl"></span>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.min.js"></script>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+{% endblock %}
