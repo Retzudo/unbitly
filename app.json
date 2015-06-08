@@ -1,0 +1,5 @@
+{
+    "name": "UnBitly",
+    "description": "A Heroku depolyable Python app (Flask) that follows Bitly URLs for you and saves you from getting tracked.",
+    "repository": "https://github.com/Retzudo/unbitly"
+}
