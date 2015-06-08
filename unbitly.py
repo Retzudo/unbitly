@@ -1,5 +1,6 @@
 from flask import Flask
 from flask import jsonify
+from flask import render_template
 from flask import request
 import requests
 
@@ -22,7 +23,7 @@ def follow():
 
 @app.route('/')
 def index():
-    return ''
+    return render_template('index.html')
 
 
 if __name__ == '__main__':
