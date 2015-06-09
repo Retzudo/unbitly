@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Retzudo/unbitly.svg)](https://travis-ci.org/Retzudo/unbitly)
+
 UnBitly
 =======
 
