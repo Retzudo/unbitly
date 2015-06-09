@@ -12,8 +12,8 @@
 <div data-ng-app="BitlyApp" data-ng-controller="BitlyController">
     <div class="container">
         <input type="url" data-ng-model="url" ng-enter="decode()">
-        <button type="button" class="decode" alt="Decode Bitly URL" ng-click="decode()"><i class="fa fa-unlock"></i></button>
-        <button type="button" class="open" alt="Open resulting URL" ng-click="open()"><i class="fa fa-external-link"></i></button>
+        <button type="button" class="decode" title="Decode Bitly URL" ng-click="decode()"><i class="fa fa-unlock"></i></button>
+        <button type="button" class="open" title="Open resulting URL" ng-click="open()"><i class="fa fa-external-link"></i></button>
     </div>
     <a class="decoded" data-ng-href="{{ decodedUrl }}" href="#">{{ decodedUrl }}</a>
     <div class="loader" ng-show="loading">. . .</div>
