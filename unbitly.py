@@ -7,7 +7,6 @@ import requests
 
 
 app = Flask(__name__)
-app.debug = True
 
 
 def follow_bitly(url):
